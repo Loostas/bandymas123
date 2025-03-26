@@ -1,0 +1,12 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore node modules if present
+node_modules/

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <title>Galerija - Pasvalys</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="container">
+                <h1>PASVALYS</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="apie miestą.html"><i class="fas fa-info-circle"></i> Apie miestą</a></li>
+                <li><a href="galerija.html"><i class="fas fa-images"></i> Galerija</a></li>
+                <li><a href="lankytinos vietos.html"><i class="fas fa-map-marker-alt"></i> Lankytinos vietos</a></li>
+                <li><a href="aktualios naujienos.html"><i class="fas fa-newspaper"></i> Aktualios naujienos</a></li>
+                <li><a href="kontaktai.html"><i class="fas fa-envelope"></i> Kontaktai</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2><i class="fas fa-images"></i> Galerija</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="pav1.jpg" alt="Pirmas vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav2.jpg" alt="Antras vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav3.jpg" alt="Trečias vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav4.jpg" alt="Ketvirtas vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav5.jpg" alt="Penktas vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav6.jpg" alt="Šeštas vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav7.jpg" alt="Septintas vaizdas">
+                </div>
+                <div class="gallery-item">
+                    <img src="pav8.jpg" alt="Aštuntas vaizdas">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h2><i class="fas fa-phone-alt"></i> Susisiekite</h2>
+                    <p><i class="far fa-envelope"></i> El. paštas: kultura@pasvaliokc.lt</p>
+                    <p><i class="fas fa-phone"></i> Tel: +370 665 48 127</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Visos teisės saugomos</p>
+                    <div class="footer-links">
+                        <a href="#">Privatumo politika</a> | <a href="#">Naudojimo sąlygos</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <button id="backToTop" title="Grįžti į viršų"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        const backToTop = document.getElementById('backToTop');
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        };
+
+        backToTop.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>
